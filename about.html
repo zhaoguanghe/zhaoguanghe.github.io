@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QBlog</title>
+    <link rel="shortcut icon" href="/static/img/favicon.png">
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <link rel="stylesheet" href="/static/content/style.css">
+    <script src="/static/layui/layui.js"></script>
+    <script src="/static/scripts/main.js"></script>
+</head>
+<body>
+    <div class="layui-header header">
+        <div class="layui-main">
+            <a class="logo" href="https://zhaoguanghe.github.io">QBlog</a>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs">
+                    <a href="https://zhaoguanghe.github.io">首页</a>
+                </li>
+                <li class="layui-nav-item layui-hide-xs">
+                    <a href="https://zhaoguanghe.github.io/about.html">关于</a>
+                </li>
+                <li class="layui-nav-item layui-hide-xs">
+                    <a href="https://zhaoguanghe.github.io/api.html">API</a>
+                </li>
+                <li class="layui-nav-item nav-btn layui-hide-sm">
+                    <a href="javascript:;"><i class="layui-icon layui-icon-more"></i><span class="layui-nav-more"></span></a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="https://zhaoguanghe.github.io">首页</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-container">
+    <div class="layui-row layui-col-space15 main">
+        <div class="map">
+            <span class="layui-breadcrumb">
+                <a href="https://zhaoguanghe.github.io">首页</a>
+                <a><cite>正文</cite></a>
+            </span>
+        </div>
+        <div class="layui-col-md9 layui-col-lg9">
+            <div class="title-article text-center">
+                <h1>关于QBlog</h1>
+            </div>
+            <div class="text" itemprop="articleBody">
+                <div id="md_content_2" class="md_content markdown-body editormd-html-preview" style="min-height: 50px;">
+                    <p>QBlog采用flask、Layui框架搭建，QBlog定位为个人技术博客，QBlog源码已在<a style="color:#0e20eb" href="https://github.com/zhaoguanghe/QBlog">Github</a>开源，感谢<a style="color:#0e20eb" href="https://palletsprojects.com/">Flask</a>、<a style="color:#0e20eb" href="http://typecho.org/">Typecho</a>、<a style="color:#0e20eb" href="https://www.echo.so">Echo</a>、以及<a style="color:#0e20eb" href="https://www.echo.so/">宁采陈</a>等做出的开源工作。</p>
+                    <h3><a name="个人信息" class="reference-link"></a><span class="header-link octicon octicon-link"></span>个人信息</h3>
+                    <ul>
+                        <li>昵称：清风思月</li>
+                        <li>职业：学生</li>
+                        <li>Github：<a style="color:#0e20eb" href="https://github.com/zhaoguanghe">https://github.com/zhaoguanghe</a></li>
+                    </ul>
+                    <h3><a name="建博初衷" class="reference-link"></a><span class="header-link octicon octicon-link"></span>建博初衷</h3><p>项目备忘、转载备份、研究分享</p>
+                    <h3><a name="联系方式" class="reference-link"></a><span class="header-link octicon octicon-link"></span>联系方式</h3><p><a style="color:#0e20eb" href="mailto:1099615621@qq.com">1099615621@qq.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar layui-col-md3 layui-col-lg3">
+            <div class="column">
+                <h3 class="title-sidebar"><i class="layui-icon">&#xe705;</i> 栏目分类</h3>
+                <ul class="layui-row layui-col-space5">
+                    <!--for item in cards endfor -->
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> CV <span class="layui-badge layui-bg-gray">0</span></a></li>
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> AI <span class="layui-badge layui-bg-gray">0</span></a></li>
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> NLP <span class="layui-badge layui-bg-gray">0</span></a></li>
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> ML <span class="layui-badge layui-bg-gray">0</span></a></li>
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> Other <span class="layui-badge layui-bg-gray">2</span></a></li>
+                </ul>
+            </div>
+			<div class="tags">
+                <h3 class="title-sidebar"><i class="layui-icon"></i>广告</h3>
+                <div class="layui-carousel" id="test10" lay-anim="" lay-indicator="none" lay-arrow="none" style="width: 240px; height: 240px;">
+                    <div carousel-item="">
+					    <div class=""><img src="/static/img/gzh.jpg" style="width:100%;height:100%"></div>
+                        <div class="layui-this"><a href="https://url.cn/5oYCQFG" target="view_window"><img src="/static/img/ads1.jpg" style="width:100%;height:100%"></a></div>
+                        <div class=""><a href="https://url.cn/5qNXk6m" target="view_window"><img src="/static/img/ads2.jpg" style="width:100%;height:100%"></a></div>
+                    </div>
+				</div>
+            </div>
+            <div class="tags">
+                <h3 class="title-sidebar"><i class="layui-icon">&#xe66e;</i>传送门</h3>
+                <div>
+                    <!--for item in cards endfor-->
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color:#00ff60" href="https://blog.csdn.net/zhaoguanghe" title='CSDN'>CSDN</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="layui-col-md12 t-copy">
+            <span class="layui-breadcrumb">
+                <span>&copy; 2020 <a href="https://zhaoguanghe.github.io"> QBlog </a></span>
+                <span class="layui-hide-xs">Poweed by <a href="http://typecho.org/" target="_blank" rel="nofollow">Typecho</a></span>
+                <span>Theme by <a href="https://www.echo.so" target="_blank">Echo</a></span>
+            </span>
+        </div>
+    </div>
+    <script src="/static/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/respond.js"></script>
+    <script>
+	layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        carousel.render({
+            elem: '#test10'
+            , width: '240px'
+            , height: '240px'
+            , interval: 2000
+            , arrow: 'none'
+            , indicator:'none'
+        });
+    });
+    $("#search_btn").click(function () {
+        layer.msg('正在搜索');
+    })
+</script>
+</body>
+</html>
