@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QBlog</title>
+    <link rel="shortcut icon" href="/static/img/favicon.png">
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <link rel="stylesheet" href="/static/content/style.css">
+    <script src="/static/layui/layui.js"></script>
+    <script src="/static/scripts/main.js"></script>
+</head>
+<body>
+    <div class="layui-header header">
+        <div class="layui-main">
+            <a class="logo" href="https://zhaoguanghe.github.io">QBlog</a>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs">
+                    <a href="https://zhaoguanghe.github.io">首页</a>
+                </li>
+                <li class="layui-nav-item layui-hide-xs">
+                    <a href="https://zhaoguanghe.github.io/about.html">关于</a>
+                </li>
+                <li class="layui-nav-item layui-hide-xs">
+                    <a href="https://zhaoguanghe.github.io/api.html">API</a>
+                </li>
+                <li class="layui-nav-item nav-btn layui-hide-sm">
+                    <a href="javascript:;"><i class="layui-icon layui-icon-more"></i><span class="layui-nav-more"></span></a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="https://zhaoguanghe.github.io">首页</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-container">
+    <div class="layui-row layui-col-space15 main">
+        <div class="map">
+            <span class="layui-breadcrumb">
+                <a href="https://zhaoguanghe.github.io">首页</a>
+                <a><cite>正文</cite></a>
+            </span>
+        </div>
+        <div class="layui-col-md9 layui-col-lg9">
+            <div class="title-article">
+                <h1>Tensorflow2.0 多标签学习识别文本验证码</h1>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe612;</i> 清风思月</span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2020-06-04 16:30:56 </span>
+                    <span><i class="layui-icon">&#xe62c;</i> 0℃</span>
+                    <span><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="text" itemprop="articleBody" id="article_content">
+                <p><b>引言</b>：</p><p>&nbsp; &nbsp; 在很多网站登录或注册环节会有文本验证码验证用户是人还是计算机，随着深度学习的发展，各种文本验证码破解方法应运而出。本文使用多标签分类模型识别文本验证码，在保证准确率的情况下提升了识别文本验证码速度。</p><p><b>多标签分类识别文本验证码研究：</b></p><p><b>&nbsp; &nbsp; </b>多标签分类<span>与单标签图像分类相比，多标签图像分类是一种更符合真实世界客观规律的方法，尤其在图像和视频的语义标注，基于内容的图像检索等领域有着广泛的应用。<a target="_blank" href="https://baijiahao.baidu.com/s?id=1603057342167437458">了解更多</a></span></p><p>本文多标签分类网络结构如下图：</p><p style="text-align: center;"><img src="/imgs/1591260308.png" alt="45454.png"><br></p><p style="text-align: left;">多标签标注文本验证码数据集使用爬虫获取，以下为百度文本验证码数据集：</p><p style="text-align: center;"><img src="/imgs/1591260330.png" alt="15454.png"><br></p><p style="text-align: left;">最后经过1000次的训练，准确率达到了99%。</p><p style="text-align: center;"><img src="/imgs/1591260346.png" alt="cnn_acc43.png"><br></p><p style="text-align: left;">识别：</p><p style="text-align: center;"><img src="/imgs/1591260358.png" alt="4646465.png"><br></p><p style="text-align: left;">以上代码见：<a target="_blank" href="https://github.com/zhaoguanghe/Multi_label_captcha">github</a></p><p style="text-align: left;"><b>结语：</b></p><p style="text-align: left;"><b>&nbsp; &nbsp;&nbsp;</b>个人认为，多标签分类应用在文本验证码识别是较为合适的。因为文本验证码的字符数固定，文本验证码标签类别也固定。特别注意的是该模型具有针对性，当文本验证码字符数变动，或者文本验证码风格变化，已训练模型将不再有效。所以在文本验证码安全防范方面，可以经常变换文本验证码来起到保护作用。</p>
+            </div>
+            <div class="tags-text">
+                <i class="layui-icon">&#xe66e;</i> CV
+            </div>
+            <div class="copy-text">
+                <div>
+                    <p>非特殊说明，本博所有文章均为博主原创。</p>
+                    <p class="hidden-xs">如若转载，请注明出处：<a href="https://zhaoguanghe.github.io/article/3.html">https://zhaoguanghe.github.io/article/3.html</a> </p>
+                </div>
+            </div>
+            <div class="page-text">
+                <div>
+                    <span class="layui-badge layui-bg-gray">上一篇</span>
+                    <a href="https://zhaoguanghe.github.io/article/2.html">Tensorflow2.0 label与one-hot的相互转换</a>
+                </div>
+                <div>
+                    <span class="layui-badge layui-bg-gray">下一篇</span>
+					<text>没有了</text>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar layui-col-md3 layui-col-lg3">
+            <div class="column">
+                <h3 class="title-sidebar"><i class="layui-icon">&#xe705;</i> 栏目分类</h3>
+                <ul class="layui-row layui-col-space5">
+                    <!--for item in cards endfor -->
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> CV <span class="layui-badge layui-bg-gray">1</span></a></li>
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> AI <span class="layui-badge layui-bg-gray">0</span></a></li>
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> NLP <span class="layui-badge layui-bg-gray">0</span></a></li>
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> ML <span class="layui-badge layui-bg-gray">0</span></a></li>
+                    <li class="layui-col-md12 layui-col-xs6"><a href=""><i class="layui-icon">&#xe63c;</i> Other <span class="layui-badge layui-bg-gray">2</span></a></li>
+                </ul>
+            </div>
+			<div class="tags">
+                <h3 class="title-sidebar"><i class="layui-icon"></i>广告</h3>
+                <div class="layui-carousel" id="test10" lay-anim="" lay-indicator="none" lay-arrow="none" style="width: 240px; height: 240px;">
+                    <div carousel-item="">
+					    <div class=""><img src="/static/img/gzh.jpg" style="width:100%;height:100%"></div>
+                        <div class="layui-this"><a href="https://url.cn/5oYCQFG" target="view_window"><img src="/static/img/ads1.jpg" style="width:100%;height:100%"></a></div>
+                        <div class=""><a href="https://url.cn/5qNXk6m" target="view_window"><img src="/static/img/ads2.jpg" style="width:100%;height:100%"></a></div>
+                    </div>
+				</div>
+            </div>
+            <div class="tags">
+                <h3 class="title-sidebar"><i class="layui-icon">&#xe66e;</i>传送门</h3>
+                <div>
+                    <!--for item in cards endfor-->
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color:#00ff60" href="https://blog.csdn.net/zhaoguanghe" target="view_window" title='CSDN'>CSDN</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="layui-col-md12 t-copy">
+            <span class="layui-breadcrumb">
+                <span>&copy; 2020 <a href="https://zhaoguanghe.github.io"> QBlog </a></span>
+                <span class="layui-hide-xs">Poweed by <a href="http://typecho.org/" target="view_window" rel="nofollow">Typecho</a></span>
+                <span>Theme by <a href="https://www.echo.so" target="view_window">Echo</a></span>
+            </span>
+        </div>
+    </div>
+    <script src="/static/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/respond.js"></script>
+    <script>
+	layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        carousel.render({
+            elem: '#test10'
+            , width: '240px'
+            , height: '240px'
+            , interval: 2000
+            , arrow: 'none'
+            , indicator:'none'
+        });
+    });
+    $("#search_btn").click(function () {
+        layer.msg('正在搜索');
+    })
+</script>
+</body>
+</html>
